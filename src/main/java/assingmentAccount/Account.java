@@ -23,8 +23,6 @@ public class Account {
     int deposite;
     int withdrawal;
 
-
-
     public Account(long accounNumber, String username, String password, int balance,KYCVerification kycVerification,ContactDetails contactDetails ,int cachback) {
         this.accounNumber = accounNumber;
         this.username = username;
@@ -35,8 +33,6 @@ public class Account {
         this.cashback = cashback;
 
     }
-
-
 
     public Account() {
         super();
@@ -113,20 +109,12 @@ public class Account {
         map.put("username",accountNumber);
         map.put("username",newUsername);
 
-
-
-
-
-
     }
     public void printUserAllDetails(){
 
         map.entrySet()
                 .stream()
                 .forEach(System.out::println);
-
-
-
         /*
         System.out.println("String="+this.accounNumber);
         System.out.println("username="+this.username);

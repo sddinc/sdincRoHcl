@@ -9,6 +9,16 @@ public class ContactDetails extends Account {
     private long mobileNumber;
     private String emailId;
 
+    public ContactDetails(String houseNumber, String localityName, String stateName, String countryName, long pincode, long mobileNumber, String emailId) {
+        this.houseNumber = houseNumber;
+        this.localityName = localityName;
+        this.stateName = stateName;
+        this.countryName = countryName;
+        this.pincode = pincode;
+        this.mobileNumber = mobileNumber;
+        this.emailId = emailId;
+    }
+
     public String getHouseNumber() {
         return houseNumber;
     }
@@ -65,7 +75,10 @@ public class ContactDetails extends Account {
         this.emailId = emailId;
     }
 
-//methods
+
+
+
+
     public void changeMobileNumber(int telNumber){
         this.mobileNumber=telNumber;
 
