@@ -19,14 +19,18 @@ public class App extends Account {
         a1.submitUserDetails("abc123","HCL");
         a1.printUserAllDetails();
 
-
+//email
         System.out.println(details.getEmailId());
         details.changeEmailId("alex@gmail.com");
         details.setEmailId("teo@gmail.com");
         System.out.println("after update email");
         System.out.println(details.getEmailId());
-
-
+//phoneNumber
+        System.out.println("phoneNumber=");
+        System.out.println(details.getMobileNumber());
+        details.setMobileNumber(456781525);
+        System.out.println("after update phonenumber");
+        System.out.println(details.getMobileNumber());
 
 
 
