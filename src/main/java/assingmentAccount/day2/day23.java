@@ -1,4 +1,4 @@
-package assingmentAccount;
+package assingmentAccount.day2;
 
 public class day23 {
 
@@ -7,23 +7,18 @@ public class day23 {
 
         String slang[]={"idiot","stupid"};
         String newWord=" ";
-        String str="you are stupid  and";
+        String str="you are stupid  and stupid.";
         String arr[]=str.split(" ");
 
         String str1="";
         for (int i = 0; i < arr.length; i++) {
             for (String s : slang) {
-
-                if (arr[i].equals(s)) {
+                if (arr[i].contains(s)) {
                     newWord = newWord + " " + "*";
-
-                   // if(!(i> arr.length))
-                        i++;
-
-
-
-
-
+                    i++;
+                   if((i> arr.length-1)) {
+                       i--;
+                   }
                 }
             }
             newWord=newWord+" "+arr[i];

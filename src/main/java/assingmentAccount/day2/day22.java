@@ -1,4 +1,4 @@
-package assingmentAccount;
+package assingmentAccount.day2;
 
 public class day22 {
     public static void main(String[] args) {

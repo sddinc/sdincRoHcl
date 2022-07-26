@@ -1,4 +1,4 @@
-package assingmentAccount;
+package assingmentAccount.day1;
 
 public class ArraysWork {
 

@@ -1,4 +1,4 @@
-package assingmentAccount;
+package assingmentAccount.day1;
 
 import java.util.HashMap;
 import java.util.Map;

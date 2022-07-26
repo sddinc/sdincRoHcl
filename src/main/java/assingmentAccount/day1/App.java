@@ -1,4 +1,4 @@
-package assingmentAccount;
+package assingmentAccount.day1;
 public class App extends Account {
     public static void main(String[] args) {
         Account a1=new Account(123,"sdinc","abc123",100,null,null,200);
