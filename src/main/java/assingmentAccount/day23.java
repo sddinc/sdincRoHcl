@@ -7,7 +7,7 @@ public class day23 {
 
         String slang[]={"idiot","stupid"};
         String newWord=" ";
-        String str="you are stupid and idiot";
+        String str="you are stupid  and";
         String arr[]=str.split(" ");
 
         String str1="";
@@ -16,9 +16,12 @@ public class day23 {
 
                 if (arr[i].equals(s)) {
                     newWord = newWord + " " + "*";
-                    if((arr.length>i)){
+
+                   // if(!(i> arr.length))
                         i++;
-                    }
+
+
+
 
 
                 }
