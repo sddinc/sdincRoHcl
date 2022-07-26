@@ -19,6 +19,9 @@ public class ContactDetails extends Account {
         this.emailId = emailId;
     }
 
+
+
+
     public String getHouseNumber() {
         return houseNumber;
     }
@@ -79,14 +82,5 @@ public class ContactDetails extends Account {
 
 
 
-    public void changeMobileNumber(int telNumber){
-        this.mobileNumber=telNumber;
-
-    }
-    public void changeEmailId(String email){
-        this.emailId=email;
-
-
-    }
 
 }

@@ -20,8 +20,6 @@ public class Account {
         this.cashback = cashback;
     }
 
-    int deposite;
-    int withdrawal;
 
     public Account(long accounNumber, String username, String password, int balance,KYCVerification kycVerification,ContactDetails contactDetails ,int cachback) {
         this.accounNumber = accounNumber;
@@ -95,9 +93,14 @@ public class Account {
 
     public int withdrawOpt(int amount){
         double cashBack=(amount*0.01);
+        if(amount>this.balance){
+            System.out.println("dont have enough balance!!");
+        }else{
 
-        this.balance=balance-amount;
-        this.cashback=this.cashback+cashBack;
+            this.balance=balance-amount;
+
+
+        }
         return this.balance;
     }
 

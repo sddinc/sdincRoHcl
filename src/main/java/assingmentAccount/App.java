@@ -8,7 +8,7 @@ public class App extends Account {
         a1.depositeOpt(100);
 
         System.out.println("Balance=");
-        a1.withdrawOpt(50);
+        a1.withdrawOpt(250);
         System.out.println(a1.getBalance());
 
         System.out.println("---------");
@@ -21,7 +21,6 @@ public class App extends Account {
 
 //email
         System.out.println(details.getEmailId());
-        details.changeEmailId("alex@gmail.com");
         details.setEmailId("teo@gmail.com");
         System.out.println("after update email");
         System.out.println(details.getEmailId());
