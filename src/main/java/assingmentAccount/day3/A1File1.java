@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class A3File1 {
+public class A1File1 {
 
     String FilePath = "C:\\Users\\Admin\\IdeaProjects\\repoHCL\\src\\main\\java\\assingmentAccount\\day3";
 
     public static void main(String[] args) {
 
         try {
-            A3File1 obj = new A3File1();
+            A1File1 obj = new A1File1();
             obj.readFileName("file.txt");
         }catch (IOException e){
             System.out.println(e);
@@ -29,8 +29,6 @@ public class A3File1 {
         System.out.println(status);
 
         Path path = Paths.get(FilePath);
-
-
         System.out.println(path.getParent());
 
     }

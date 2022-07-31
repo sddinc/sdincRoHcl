@@ -1,6 +1,8 @@
 package assingmentAccount.day3;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class A2csvFile {
@@ -9,7 +11,7 @@ public class A2csvFile {
     public static void main(String[] args) {
 
         try {
-            A3File1 obj = new A3File1();
+            A1File1 obj = new A1File1();
             obj.readFileName("file.txt");
         }catch (IOException e){
             System.out.println(e);
@@ -26,7 +28,35 @@ public class A2csvFile {
 
         System.out.println(f.listFiles());
 
+        BufferedReader br= new BufferedReader(new FileReader(f));
+
+        int i;
+/*
+        while ((i = f.read()) != -1)
+            System.out.print((char)i);
+
+ */
+        }
+        /*
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(1,2000);
+        map.put(2, 3000);
+        map.put(3, 2000);
+
+        Iterator<Integer> itr = map.keySet().iterator();
+
+
+        while(itr.hasNext())
+        {
+
+
+        }
+
+        */
+
+
+
 
 
     }
-}
+
